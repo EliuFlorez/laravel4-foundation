@@ -1,11 +1,8 @@
-##Laravel 4 - Foundation 4 (Stable)
+##Laravel 4 - Foundation 4
 
 This is a Laravel 4 Foundation Application,  it has Foundation 4 and also comes with basic user registration and login.
 
-This is based off of github.com/andrew13/Laravel-4-Bootstrap.git but swapped out to have the foundation framework.
-
-Installation is the same as well.
-
+This is based off of [this repo](http://www.github.com/andrew13/Laravel-4-Bootstrap.git) but swapped out to have the foundation framework.
 
 ###How to install
 
