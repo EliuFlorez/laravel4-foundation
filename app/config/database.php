@@ -55,9 +55,9 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'trackd_dev',
-			'username'  => 'root',
-			'password'  => 'root',
+			'database'  => 'YOURDATABASE',
+			'username'  => 'mostLikelyRoot',
+			'password'  => '',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
