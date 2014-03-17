@@ -68,7 +68,7 @@ class AccountController extends AuthorizedController
 		{
 			// Create the user.
 			//
-			$user =  User::find(Auth::user()->id);
+			$user = User::find(Auth::user()->id);
 			$user->first_name = Input::get('first_name');
 			$user->last_name  = Input::get('last_name');
 			$user->email      = Input::get('email');
@@ -87,7 +87,7 @@ class AccountController extends AuthorizedController
 
 		// Something went wrong.
 		//
-		return Redirect::to('account')->withInput($inputs)->withErrors($validator->getMessageBag());
+		return Redirect::to('account')->withInput($inputs)->withErrors($validator);
 	}
 
 	/**
@@ -156,7 +156,7 @@ class AccountController extends AuthorizedController
 
 		// Something went wrong.
 		//
-		return Redirect::to('account/login')->withErrors($validator->getMessages());
+		return Redirect::to('account/login')->withErrors($validator);
 	}
 
 	/**
@@ -225,7 +225,7 @@ class AccountController extends AuthorizedController
 
 		// Something went wrong.
 		//
-		return Redirect::to('account/register')->withInput($inputs)->withErrors($validator->getMessages());
+		return Redirect::to('account/register')->withInput($inputs)->withErrors($validator);
 	}
 
 	/**
